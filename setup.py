@@ -28,7 +28,8 @@ setuptools.setup(
         "rsa",
         "ruamel.yaml>=0.17.7",
         "six>=1.15.0",
-        "urllib3>=1.26.2,<2",
+        # Forked to drop the upstream <2 pin so urllib3 2.x can be installed.
+        "urllib3>=1.26.2",
         "legacy-cgi>=2.6.2; python_version>='3.10'",
         "google-cloud-tasks>=2.25.0; python_version>='3.10'",
     ],
